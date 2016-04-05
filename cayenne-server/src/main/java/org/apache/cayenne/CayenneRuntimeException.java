@@ -59,6 +59,15 @@ public class CayenneRuntimeException extends RuntimeException {
     }
 
     /**
+     * Constructs an exception with the specified message.
+     *
+     * @since 4.0
+     */
+    public CayenneRuntimeException(String message) {
+        super(message);
+    }
+
+    /**
      * Returns exception message without Cayenne version label.
      * 
      * @since 1.1
