@@ -146,7 +146,7 @@ public abstract class BaseRemoteService implements RemoteService {
 			// Recast the exception to a serializable form.
 			Exception cause = new Exception(Util.unwindException(th).getLocalizedMessage());
 
-			throw new CayenneRuntimeException(wrapperMessageString + cause);
+			throw new CayenneRuntimeException(wrapperMessageString, cause);
 		}
 	}
 
